@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping 
+	package="com.sun.hibernate.dao.hbm">
+
+	<class name="HistoryMessage" table="history_message">
+		<id name="id"  type="integer">
+			<generator class="identity"/>
+		</id>
+		<property name="localMsgId" type="string" column="local_msgid"></property>
+		<property name="sender" type="string" ></property>
+		<property name="receiver" type="string" ></property>
+		<property name="clientDate" type="timestamp" column="client_date"></property>
+		<property name="serverDate" type="timestamp" column="server_date"></property>
+		<property name="message" type="string" ></property>
+		<property name="type" type="string" ></property>
+		<property name="state" type="integer" ></property>
+		<property name="subject" type="string" ></property>
+		<property name="timeToDeliver" type="timestamp" ></property>
+		<property name="sendedTime" type="timestamp" ></property>
+		<property name="msgReport" type="string" ></property>
+		
+	</class>
+</hibernate-mapping>

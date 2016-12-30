@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.sun.hibernate</groupId>
+  <artifactId>appserver-hibernate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>appserver-hibernate</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+       <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.6.1</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.6.1</version>
+</dependency>
+<!-- hibernate related -->
+	<dependency>
+      <groupId>org.hibernate</groupId>
+  	  <artifactId>hibernate-core</artifactId>
+  	  <version>3.6.10.Final</version>
+    </dependency>
+    <dependency>
+  	  <groupId>asm</groupId>
+  	  <artifactId>asm</artifactId>
+  	  <version>3.2</version>
+	</dependency>
+    <dependency>
+  	  <groupId>mysql</groupId>
+  	  <artifactId>mysql-connector-java</artifactId>
+  	  <version>5.1.18</version>
+    </dependency>
+	<dependency>
+  	  <groupId>c3p0</groupId>
+  	  <artifactId>c3p0</artifactId>
+  	  <version>0.9.1.2</version>
+	</dependency>
+	<dependency>
+  	  <groupId>org.hibernate</groupId>
+  	  <artifactId>hibernate-c3p0</artifactId>
+  	  <version>3.6.10.Final</version>
+	</dependency>
+	<dependency>
+  	  <groupId>org.javassist</groupId>
+  	  <artifactId>javassist</artifactId>
+  	  <version>3.20.0-GA</version>
+	</dependency>	
+	
+	
+	<dependency>
+  	  <groupId>org.apache.james</groupId>
+  	  <artifactId>apache-mime4j-core</artifactId>
+  	  <version>0.7.2</version>
+	</dependency>
+	<dependency>
+  	  <groupId>org.apache.james</groupId>
+  	  <artifactId>apache-mime4j-dom</artifactId>
+  	  <version>0.7.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+<dependency>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-server</artifactId>
+    <version>9.4.0.v20161208</version>
+</dependency>
+	<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-servlet -->
+<dependency>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-servlet</artifactId>
+    <version>9.4.0.v20161208</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-util -->
+<dependency>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-util</artifactId>
+    <version>9.4.0.v20161208</version>
+</dependency>
+
+	<!-- 
+	<dependency>
+  	  <groupId>org.eclipse.jetty</groupId>
+  	  <artifactId>jetty-server</artifactId>
+  	  <version>9.3.3.v20150827</version>
+	</dependency>
+	
+	<dependency>
+	<groupId>org.eclipse.jetty</groupId>
+	<artifactId>jetty-servlet</artifactId>
+	<version>9.3.8.v20160314</version>
+</dependency> -->
+<dependency>
+  	  <groupId>commons-fileupload</groupId>
+  	  <artifactId>commons-fileupload</artifactId>
+  	  <version>1.3.1</version>
+	</dependency>
+  </dependencies>
+</project>

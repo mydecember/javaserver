@@ -16,3 +16,8 @@ java.net.BindException: Address already in use
 	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
 	at com.sun.hibernate.http.JettyServer.start(JettyServer.java:42)
 	at com.sun.hibernate.main.MyServer.main(MyServer.java:53)
+12-30 17:12:27,186 ERROR [main] MyServer:24 - 1111
+12-30 17:12:27,188  INFO [main] MyServer:25 - fghhhfffffffffff
+12-30 17:12:27,188  INFO [main] MyServer:26 - kkkkkkkkkkkkk
+12-30 17:12:27,382  INFO [main] JettyServer:45 - Jetty server started at port [9999]
+12-30 17:12:27,382  INFO [main] MyServer:54 - jetty service started..

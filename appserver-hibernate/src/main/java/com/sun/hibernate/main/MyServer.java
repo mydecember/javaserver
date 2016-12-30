@@ -7,9 +7,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
-
-
-
 import com.sun.hibernate.dao.hbm.HistoryMessage;
 import com.sun.hibernate.http.JettyServer;
 

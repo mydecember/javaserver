@@ -43,8 +43,15 @@
 	<appender-ref ref="INFO"/>
 	</logger>
 	
+	
+	<logger name="com.mchange" additivity="false">
+	<level value="error"/>
+	<appender-ref ref="CONSOLE"/>
+	<appender-ref ref="INFO"/>
+	</logger>
+	
 	<logger name="org" additivity="false">
-	<level value="warn"/>
+	<level value="error"/>
 	<appender-ref ref="CONSOLE"/>
 	<appender-ref ref="INFO"/>
 	</logger>

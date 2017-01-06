@@ -1,4 +1,4 @@
-package com.sun.hibernate;
+package com.sun.netty;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -10,21 +10,7 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
-    @Override
-	protected void setUp() throws Exception {
-		// TODO Auto-generated method stub
-		super.setUp();
-		System.out.println("Test start...");
-	}
-
-	@Override
-	protected void tearDown() throws Exception {
-		// TODO Auto-generated method stub
-		super.tearDown();
-		System.out.println("Test stop...");
-	}
-
-	/**
+    /**
      * Create the test case
      *
      * @param testName name of the test case

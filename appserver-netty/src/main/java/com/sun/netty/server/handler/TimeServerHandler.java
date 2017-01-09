@@ -12,7 +12,7 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 		// TODO Auto-generated method stub
-		super.channelRead(ctx, msg);
+		//super.channelRead(ctx, msg);
 		ByteBuf buf = (ByteBuf)msg;
 		byte[] req = new byte[buf.readableBytes()];
 		buf.readBytes(req);
@@ -21,12 +21,13 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
 		String currentTime = new Date(System.currentTimeMillis()).toString();
 		ByteBuf resp = Unpooled.copiedBuffer(currentTime.getBytes());
 		ctx.write(resp);
+		System.out.println("response :"+currentTime);
 	}
 
 	@Override
 	public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
-		super.channelReadComplete(ctx);
+		//super.channelReadComplete(ctx);
 		ctx.flush();
 		System.out.println("read completed...");
 	}
@@ -34,7 +35,7 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
 		// TODO Auto-generated method stub
-		super.exceptionCaught(ctx, cause);
+		//super.exceptionCaught(ctx, cause);
 		ctx.close();
 		System.out.println("close completed...");
 	}

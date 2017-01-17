@@ -57,7 +57,8 @@ public class MyServer {
         	try {
         		java.util.List userList = session.createQuery(hql).list();
         		HistoryMessage msg = (HistoryMessage)userList.get(0);
-        		System.out.println(msg.toString());
+        		//System.out.println();
+        		log.info(msg.toString());
         	}catch (HibernateException e){
         		e.printStackTrace();
         		Assert.fail(e.getMessage());

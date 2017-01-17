@@ -15,7 +15,7 @@ import com.sun.hibernate.http.jettyservlet.HelloMessage;
 
 public class JettyServer {
 private static final Logger log = LoggerFactory.getLogger(JettyServer.class);
-	
+	private static final int port = 8082;
 
 	
 	private JettyServer(){}
@@ -30,7 +30,7 @@ private static final Logger log = LoggerFactory.getLogger(JettyServer.class);
 	}
 	
 	public void start() throws Exception{
-		 Server server = new Server(8080);  
+		 Server server = new Server(port);  
 		  
 	        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);  
 	        context.setContextPath("/");  
@@ -42,6 +42,6 @@ private static final Logger log = LoggerFactory.getLogger(JettyServer.class);
 	        server.start();  
 //      server.join();
 
-        log.info("Jetty server started at port [" + 9999 + "]");
+        log.info("Jetty server started at port [" + port + "]");
 	}
 }
